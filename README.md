@@ -58,7 +58,6 @@ Create a `.env` file in the root directory:
 
 ```env
 OPENAI_API_KEY=your_openai_api_key_here
-PUBMED_API_KEY=your_ncbi_api_key_here  # Optional but recommended
 HUGGINGFACE_API_TOKEN=your_hf_token_here  # If using HF embeddings
 ```
 
