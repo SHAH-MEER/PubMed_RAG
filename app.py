@@ -6,7 +6,7 @@ from langchain_openai import ChatOpenAI
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
 
-# Configuration - Use Hugging Face Spaces secrets
+# Configurations
 openai_api_key = os.getenv("OPENAI_API_KEY")
 DB_DIR = "vector_db"
 
@@ -14,7 +14,7 @@ DB_DIR = "vector_db"
 embed_model = HuggingFaceEmbeddings(
     model_name="intfloat/e5-base",
     model_kwargs={"device": "cpu"},
-    encode_kwargs={"batch_size": 16}  # Reduced batch size for HF Spaces
+    encode_kwargs={"batch_size": 16}  
 )
 
 # Global variables for lazy loading
